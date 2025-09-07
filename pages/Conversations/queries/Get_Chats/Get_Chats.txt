@@ -1,0 +1,2 @@
+SELECT DISTINCT session_id
+FROM healthify_chat_histories LIMIT 10;

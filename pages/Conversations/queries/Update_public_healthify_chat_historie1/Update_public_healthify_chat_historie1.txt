@@ -1,0 +1,1 @@
+UPDATE public.healthify_chat_histories SET "session_id"= '{{Sessions.updatedRow.session_id}}', "message"= '{{Sessions.updatedRow.message}}' WHERE "id"= {{Sessions.updatedRow.id}};

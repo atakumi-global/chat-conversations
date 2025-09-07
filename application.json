@@ -1,0 +1,20 @@
+{
+  "appIsExample": false,
+  "appLayout": {
+    "type": "TABLET"
+  },
+  "applicationVersion": 2,
+  "collapseInvisibleWidgets": true,
+  "color": "#FFEFDB",
+  "evaluationVersion": 2,
+  "icon": "chat",
+  "pages": [
+    {
+      "id": "Conversations",
+      "isDefault": true
+    }
+  ],
+  "unpublishedAppLayout": {
+    "type": "TABLET"
+  }
+}

@@ -1,0 +1,1 @@
+SELECT COUNT(*) from public.healthify_chat_histories where session_id ilike '%{{Sessions.searchText}}%';

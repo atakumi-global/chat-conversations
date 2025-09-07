@@ -1,0 +1,12 @@
+SELECT
+  *
+FROM
+  public.healthify_chat_histories
+WHERE
+  "session_id" ilike '%{{Sessions.searchText}}%'
+ORDER BY
+  "{{Sessions.sortOrder.column || 'id'}}" {{Sessions.sortOrder.order !== "desc" ? "" : "DESC"}}
+LIMIT
+  {{Sessions.pageSize}}
+OFFSET
+  {{Sessions.pageOffset}}

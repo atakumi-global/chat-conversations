@@ -1,0 +1,1 @@
+INSERT INTO public.healthify_chat_histories ("session_id","message") VALUES ('{{(Sessions.newRow || {}).session_id}}','{{(Sessions.newRow || {}).message}}')

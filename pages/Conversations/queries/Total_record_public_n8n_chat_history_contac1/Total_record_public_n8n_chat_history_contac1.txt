@@ -1,0 +1,1 @@
+SELECT COUNT(*) from public.n8n_chat_history_contact_agent where session_id ilike '%{{Chat_Histories.searchText}}%';

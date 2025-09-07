@@ -1,0 +1,1 @@
+UPDATE public.n8n_chat_history_contact_agent SET "session_id"= '{{Chat_Histories.updatedRow.session_id}}', "message"= '{{Chat_Histories.updatedRow.message}}' WHERE "id"= {{Chat_Histories.updatedRow.id}};

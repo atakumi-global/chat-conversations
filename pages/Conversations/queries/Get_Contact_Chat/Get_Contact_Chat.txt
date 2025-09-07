@@ -1,0 +1,6 @@
+SELECT
+  message
+FROM
+  public.n8n_chat_history_contact_agent
+Where 
+	session_id = {{Chat_Histories.selectedRow.session_id}}
