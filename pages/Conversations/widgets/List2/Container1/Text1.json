@@ -1,6 +1,6 @@
 {
   "animateLoading": true,
-  "backgroundColor": "#fca5a5",
+  "backgroundColor": "\n\n",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 4,
   "boxShadow": "none",

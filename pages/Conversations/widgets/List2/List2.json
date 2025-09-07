@@ -9,12 +9,12 @@
   "animateLoading": true,
   "backgroundColor": "{{ currentItem.message.type === 'ai' ? \"#fff\" : \"#000\" }}\n",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 65,
+  "bottomRow": 86,
   "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 650,
+      "bottomRow": 860,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -114,7 +114,7 @@
   "mobileRightColumn": 64,
   "mobileTopRow": 6,
   "needsErrorInfo": false,
-  "pageSize": 7,
+  "pageSize": 10,
   "parentColumnSpace": 11.609375,
   "parentId": "0",
   "parentRowSpace": 10,

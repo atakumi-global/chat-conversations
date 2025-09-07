@@ -1,0 +1,1 @@
+SELECT * FROM public."n8n_chat_history_contact_agent" LIMIT 10;

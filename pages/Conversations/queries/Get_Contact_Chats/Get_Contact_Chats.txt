@@ -1,4 +1,4 @@
-SELECT
-  distinct(session_id)
-FROM
-  public.n8n_chat_history_contact_agent
+SELECT DISTINCT session_id, 
+       MIN("dateCreated") OVER (PARTITION BY session_id) as session_start_date
+FROM public.n8n_chat_history_contact_agent 
+ORDER BY session_start_date DESC;

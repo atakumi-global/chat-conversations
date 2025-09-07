@@ -1,8 +1,8 @@
 {
-  "animateLoading": true,
-  "backgroundColor": "white",
-  "borderColor": "#E0DEDE",
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "animateLoading": false,
+  "backgroundColor": "{{ currentItem.message.type === 'ai' ? \"#f2c9c9\" : \"#b5dcee\" }}",
+  "borderColor": "#e0dede",
+  "borderRadius": "0.375rem",
   "borderWidth": "1",
   "bottomRow": 8,
   "boxShadow": "none",
@@ -30,11 +30,8 @@
       "leftColumn": 0,
       "maxDynamicHeight": 9000,
       "minDynamicHeight": 4,
-      "minHeight": null,
       "minWidth": 450,
-      "mobileBottomRow": null,
       "mobileLeftColumn": 0,
-      "mobileRightColumn": null,
       "mobileTopRow": 0,
       "needsErrorInfo": false,
       "parentColumnSpace": 1,
@@ -42,7 +39,6 @@
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
-      "rightColumn": null,
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "useAutoLayout": false,
@@ -59,16 +55,13 @@
   "dragDisabled": true,
   "dynamicBindingPathList": [
     {
-      "key": "borderRadius"
-    },
-    {
-      "key": "isVisible"
+      "key": "backgroundColor"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
-      "key": "isVisible"
+      "key": "backgroundColor"
     }
   ],
   "dynamicTriggerPathList": [],
@@ -77,7 +70,7 @@
   "isDeletable": false,
   "isListItemContainer": true,
   "isLoading": false,
-  "isVisible": "{{ currentItem[\"message\"].type !== 'ai' }}",
+  "isVisible": true,
   "key": "hsdcn5cmhg",
   "leftColumn": 0,
   "maxDynamicHeight": 9000,

@@ -1,16 +1,16 @@
 {
-  "gitSyncId": "68bc85ddcf93fa4984a07c75_c6cd804f-9cb5-4b25-8d3d-2736f8c9e406",
-  "id": "Conversations_Get_Contact_Chats",
+  "gitSyncId": "68bc85ddcf93fa4984a07c75_5563b4da-d0a5-412f-af78-e8be7ae41c64",
+  "id": "Conversations_Query2",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT DISTINCT session_id, \n       MIN(\"dateCreated\") OVER (PARTITION BY session_id) as session_start_date\nFROM public.n8n_chat_history_contact_agent \nORDER BY session_start_date DESC;",
+      "body": "SELECT * FROM public.\"n8n_chat_history_contact_agent\" LIMIT 10;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": false
+          "value": true
         }
       ],
       "timeoutInMillisecond": 10000
@@ -22,10 +22,9 @@
       "name": "Atakumi - Postgres",
       "pluginId": "postgres-plugin"
     },
-    "dynamicBindingPathList": [],
-    "name": "Get_Contact_Chats",
+    "name": "Query2",
     "pageId": "Conversations",
-    "runBehaviour": "AUTOMATIC",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }
